@@ -2,3 +2,23 @@
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+
+- Define 4 variables: x, y, customerLocationX, customerLocationY. Variables x and y will be assigned 0, and customerLocation variables will be undefined.
+
+- The large warehouse will need to be turned into a grid.
+
+- All variables origin(0) will be where the front door is. Example, x=0, y=0, customerLocationX=0, and customerLocationY=0 will be at the front door. Every blocks location will be determined off this.
+
+-  Variables x and y origin will represent the location the customer needs to be.
+
+- The customer's location can be determined by their location within the building and then you will update the customerLocationX and customerLocationY. 
+
+- Create an alert box/modal that tells the customer to travel to a specific location. Let the customer know they can only move North/South/West/East. Then ask which way would the customer like to move?
+
+- When the customer makes made an input:
+    -Start a while loop that will equate true as long as variables x and y != customerLocationX and customerLocationY
+    - check to see if the input matches the available inputs(North,South,West,East). If everything matches, then move the customer one block in the direction submitted, update the four variables, initiate the popup/modal again and display,"Your current location is "", which way would you like to move now?". The customer will input another direction and submit.
+
+- This will go on until the customer reaches their destination, at which point the while loop will equate false and break.
+
+- Once this happens execute an alert/modal that says something like, "Congratulations!! You're right where you need to be!".
