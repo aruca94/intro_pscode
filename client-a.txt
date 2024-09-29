@@ -2,3 +2,17 @@
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+** The flow below is roughly meant to be coded in the order it is written below, from top to bottom. If issues arise, adjust as needed. **
+
+
+- create 3 variables: playerAttemptLeft, randomNum, and playerNum(leave undefined).
+
+- Assign playerAttemptLeft variable 3, and assign randomNum the JavaScript random number function including numbers 1 through 10 and excluding 0.
+
+- Create an alert box or modal that welcomes the player with a string that says something like, "Welcome to the guessing game, you have `playerAttemptLeft` attempts left to guess the correct number. Input a number 1 through 10 please.
+
+- Once the user has submitted their input there should be some kind of logic to make sure there is a number that has been inputted, and it has a value of 1 - 10. If there is anything else submitted, ask the user to submit a number 1 - 10 while focusing on the input field. 
+
+- Once the conditions of the input have been met, reassign playerNum the inputted value from the input field. Run a conditional that checks if playerNum === randomNum and also checks to see if playerAttemptLeft is >= 0. If the two are equal and playerAttemptLeft is >= 0 pop up another alert box or modal that says something like, "Great job!! You guessed correct!!". Otherwise, reduce 1 from the playerAttemptLeft variable, and update the pop up box / modal that says something like, "WRONG! Try again! You have `playerAttemptLeft` attempts left. The player will then enter another number in the input box.
+
+- This will continue until until the player either gets the correct answer or runs out of guesses.
